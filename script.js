@@ -13,11 +13,11 @@ const personalMovieDB = {
 
 for (let i = 0; i < 2; i++) {
 
-    let firstQuestion = prompt('Один из последних фильмов?', '');
-    let secondQuestion = prompt('На скольколо оцениваете его?', '');
+    let fq = prompt('Один из последних фильмов?', '');
+    let sq = prompt('На скольколо оцениваете его?', '');
 
-    if (firstQuestion != null && secondQuestion != null && firstQuestion != '' && secondQuestion != '' && firstQuestion.length < 50) {
-        personalMovieDB.movies[firstQuestion] = secondQuestion;
+    if (fq != null && sq != null && fq != '' && sq != '' && fq.length < 50) {
+        personalMovieDB.movies[fq] = sq;
         console.log('Done');
     } else {
         i--;
